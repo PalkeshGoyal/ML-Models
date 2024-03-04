@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;">
+    <h1>PREDICT USING THE MODEL</h1>
+
+    <h2>INSERT THE REQUIRED DATA</h2>
+
+    <div>
+    <form action="https://www.youtube.com/" method="post">
+        <table>
+            <th>Fields</th>
+            <th>Value</th>
+            <tr>
+                <td>CreditScore</td>
+                <td><input type="number" name="CreditScore" min="0"></td>
+            </tr>
+            <tr>
+                <td>Geography</td>
+                <td>
+                    <select name="Geography" id="Geography">
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Spain">Spain</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            <td>Gender</td>
+                <td>
+                <select name="Gender" id="Gender">
+                    <option value="Male" selected>Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" name="Age" min="0"></td>
+            </tr>
+            <tr>
+                <td>Tenure</td>
+                <td>
+                    <select name="Tenure" id="Tenure">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Balance</td>
+                <td><input type="number" name="Balance" min="0"></td>
+            </tr>
+            <tr>
+                <td>NumOfProducts</td>
+                <td>
+                    <select name="NumOfProducts" id="NumOfProducts">
+                        <option value="1" selected>1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>HasCrCard</td>
+                <td>
+                    <select name="HasCrCard" id="HasCrCard">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>IsActiveMember</td>
+                <td>
+                    <select name="IsActiveMember" id="IsActiveMember">
+                        <option value="0" selected>0</option>
+                        <option value="1">1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>EstimatedSalary</td>
+                <td>
+                    <input type="number" name="EstimatedSalary" id="EstimatedSalary" min="0">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="PREDICT">
+    </form>
+    </div>
+
+<!-- 
+France	0.161612
+Germany	0.324701
+Spain	0.166801
+
+Female	0.250715
+Male	0.164803 
+-->
+</body>
+</html>
